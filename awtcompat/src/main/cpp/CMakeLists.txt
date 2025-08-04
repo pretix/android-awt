@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.4.1)
 
+project(awtcompat-native-components)
+
 set(SOURCES
     awtcompat_native_components.c
     headers/awtcompat_native_components.h
