@@ -38,7 +38,11 @@ android {
             languageVersion.set(JavaLanguageVersion.of(17))
         }
     }
-
+    configurations {
+        configureEach {
+            exclude module: 'commons-logging'
+        }
+    }
     packagingOptions {
         resources {
             excludes += 'license/README.dom.txt'
